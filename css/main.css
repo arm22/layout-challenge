@@ -3,12 +3,8 @@
 
 body {
 	font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 300;
-	background-image: url("../img/background.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 }
 
 a:link, a:visited {
@@ -43,10 +39,6 @@ h3 {
 }
 
 main {
-	margin: 20px;
-	margin-left: 30%;
-	background-image: url("../img/ricepaper_v3.png");
-	opacity: 0.9;
 }
 
 #header {
@@ -83,4 +75,59 @@ dd {
 	border-top: 5px solid #EC791F;
 	font-size: 80%;
 	text-align: right;
+}
+
+.container-fluid {
+	background-image: url("../img/ricepaper_v3.png");
+	opacity: 0.9;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#tagline {
+	display: none;
+}
+
+nav>ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul>li {
+	display: inline-block;
+	margin-right: 1em;
+	list-style-type: none; 
+}
+
+li>a {
+	color: #55E;
+}
+
+li>a:hover, li>a:focus {
+	color: #00E;
+}
+
+@media (min-width: 992px) {
+	body {
+		background-image: url("../img/background.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		font-size: 18px;
+	}
+
+	.container-fluid {
+		margin: 20px;
+		margin-left: 30%;
+	}
+
+	#tagline {
+		display: inline-block;
+	}
+
+	nav {
+		position: absolute;
+		top: 40px;
+		left: 992px;
+	}
 }
